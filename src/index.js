@@ -1,11 +1,10 @@
-function Animal (name, color) {
-  this.name = name;
-  this.color = color;
-  this.voice = function () {
-    console.log('I can say: ' + this.name  + this.color)
-  }
+import './styles/main.scss'
+import './module'
+
+async function start() {
+  await Promise.resolve()
 
 }
 
-const cat = new Animal('Markiz', 'white')
-cat.voice()
+console.log(start());
+console.log('index1');
